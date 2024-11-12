@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(189, 185, 185);
+}
+
 img {
   max-width: 100%;
 }
@@ -18,5 +22,4 @@ img {
   justify-content: center;
   align-items: center;
   height: 100%;
-  /* Occupa tutta l'altezza della pagina */
 }
