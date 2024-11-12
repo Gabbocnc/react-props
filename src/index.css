@@ -8,6 +8,16 @@ body {
   background-color: rgb(189, 185, 185);
 }
 
+main {
+  margin: 0px 600px;
+}
+
+header {
+  background-color: black;
+  color: white;
+  margin-bottom: 50px;
+}
+
 img {
   max-width: 100%;
 }
@@ -21,5 +31,5 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  flex-direction: column;
 }
