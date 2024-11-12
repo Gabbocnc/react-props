@@ -33,3 +33,14 @@ img {
   align-items: center;
   flex-direction: column;
 }
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+
+  div {
+    padding: 15px;
+    font-size: 20px;
+  }
+}
