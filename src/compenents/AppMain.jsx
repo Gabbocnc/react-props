@@ -1,12 +1,10 @@
-import PizzaCardMargherita from "../Card/PizzaCardMargherita.jsx"
-import PizzaCardDiavola from "../Card/PizzaCardDiavola.jsx"
-
+import PizzaCard from "./Card/PizzaCard.jsx"
+import pizze from './data/Pizze.js'
 
 export default function AppMain() {
     return (
         <main className='container'>
-            <PizzaCardMargherita />
-            <PizzaCardDiavola />
+            {pizze.map(pizza => <PizzaCard key={pizza.id} data={pizza} />)}
         </main>
 
     )
