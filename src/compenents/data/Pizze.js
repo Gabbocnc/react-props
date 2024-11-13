@@ -5,7 +5,7 @@ export default [
         image: '/img/margherita.jpg',
         content:
             "La pizza margherita, insieme alla pizza marinara, è una delle versioni più semplici e amate della pizza! ",
-        tags: ["html", "css"],
+        tags: ["html"],
         link: 'https://ricette.giallozafferano.it/Pizza-Margherita.html',
         published: true,
     },

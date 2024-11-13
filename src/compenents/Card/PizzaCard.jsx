@@ -7,7 +7,7 @@ export default function PizzaCard({ data }) {
     if (data.published === false) {
         return null
     }
-    if (data.tags === 'html') {
+    if (data.tags.includes('html')) {
         return styleCard.red
     }
 
