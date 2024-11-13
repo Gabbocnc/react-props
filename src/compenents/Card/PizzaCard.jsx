@@ -3,6 +3,11 @@ import styleButton from '../Button/Button.module.css'
 
 
 export default function PizzaCard({ data }) {
+
+    if (data.published === false) {
+        return null
+    }
+
     return (
         <div className={styleCard.card} >
             <img src={data.image} className={styleCard.cardImg} alt="" />
@@ -10,6 +15,7 @@ export default function PizzaCard({ data }) {
                 <h5 className={styleCard.cardTitle}>{data.title}</h5>
                 <p className={styleCard.cardText}>{data.content} </p>
                 <a href={data.link} className={styleButton.btn}>Ricetta</a>
+
             </div>
         </div >
     )
