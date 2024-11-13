@@ -7,6 +7,9 @@ export default function PizzaCard({ data }) {
     if (data.published === false) {
         return null
     }
+    if (data.tags === 'html') {
+        return styleCard.red
+    }
 
     return (
         <div className={styleCard.card} >
@@ -15,7 +18,7 @@ export default function PizzaCard({ data }) {
                 <h5 className={styleCard.cardTitle}>{data.title}</h5>
                 <p className={styleCard.cardText}>{data.content} </p>
                 <a href={data.link} className={styleButton.btn}>Ricetta</a>
-
+                <div className={styleCard.tags}>{data.tags}</div>
             </div>
         </div >
     )
